@@ -2359,8 +2359,8 @@
         "type": "other",
         "other": {
           "name": "hyperv-daemons",
-          "version": "5.10.74.1",
-          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.74.1.tar.gz"
+          "version": "5.10.78.1",
+          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.78.1.tar.gz"
         }
       }
     },
@@ -2719,8 +2719,8 @@
         "type": "other",
         "other": {
           "name": "kernel",
-          "version": "5.10.74.1",
-          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.74.1.tar.gz"
+          "version": "5.10.78.1",
+          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.78.1.tar.gz"
         }
       }
     },
@@ -2729,8 +2729,8 @@
         "type": "other",
         "other": {
           "name": "kernel-headers",
-          "version": "5.10.74.1",
-          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.74.1.tar.gz"
+          "version": "5.10.78.1",
+          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.78.1.tar.gz"
         }
       }
     },
@@ -2739,8 +2739,8 @@
         "type": "other",
         "other": {
           "name": "kernel-hyperv",
-          "version": "5.10.74.1",
-          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.74.1.tar.gz"
+          "version": "5.10.78.1",
+          "downloadUrl": "https://github.com/microsoft/CBL-Mariner-Linux-Kernel/archive/rolling-lts/mariner/5.10.78.1.tar.gz"
         }
       }
     },
