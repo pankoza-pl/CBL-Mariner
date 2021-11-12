@@ -1,12 +1,13 @@
 Summary:        File System in Userspace (FUSE) utilities
 Name:           fuse
 Version:        2.9.7
-Release:        8%{?dist}
+Release:        10%{?dist}
 License:        GPL+
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Group:          System Environment/Base
 URL:            https://github.com/libfuse/libfuse
+# Source0       https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 Source0:        https://github.com/libfuse/libfuse/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
 Patch0:         fuse-types.patch
 Patch1:         fuse-prevent-silent-truncation.patch
@@ -14,6 +15,7 @@ Patch2:         fuse-escaped-commas-CVE-2018-10906.patch
 Patch3:         fuse-bailout-transient-config-read-failure.patch
 Patch4:         fuse-refuse-unknown-options-CVE-2018-10906.patch
 Patch5:         fuse-whitelist-known-good-filesystems.patch
+Patch6:         fuse-gcc11.patch
 Provides:       %{name}-libs = %{version}-%{release}
 
 %description
@@ -38,6 +40,7 @@ It contains the libraries and header files to create fuse applications.
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 
 %build
 %configure --disable-static INIT_D_PATH=/tmp/init.d &&
@@ -72,6 +75,9 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %{_libdir}/pkgconfig/fuse.pc
 
 %changelog
+* Fri Nov 12 2021 Nicolas Guibourge <nicolasg@microsoft.com> - 2.9.7-10
+- Fix gcc 11 build issue
+
 * Fri Jul 23 2021 Thomas Crain <thcrain@microsoft.com> - 2.9.7-8
 - Add provides for libs subpackages from base package
 - Minor linting (make macros, replace source URL)
